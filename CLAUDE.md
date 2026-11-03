@@ -28,18 +28,24 @@ Published by Wend Labs LLC.
 ## Keep in sync with the app
 This copy makes promises about the app. If the app changes, these pages
 need to change too:
-- Pricing: free tools, 7-day trial, one-time $4.99 unlock, no subscription
-- Data: no accounts, servers, analytics, or ads; everything stays on device
-- Permissions: microphone, camera, notifications. No photo library
-  permission; SendEx attaches photos through the phone's own picker.
-- SendEx: messages fade after 24 hours unless kept
+- Pricing: free tier (Spin Check, Mantras, check-in, counter, More
+  support); SendEx, Funny Bone and Light Mode get a 7-Day free trial (free
+  App Store product, claimed once, 7 days from the claim date, no
+  auto-charge), then the one-time $4.99 Full Unlock. No subscription.
+- Data: no accounts, servers, analytics, or ads; everything stays on device.
+  What leaves the phone: RevenueCat purchase record, Google Fonts requests.
+- Permissions: only microphone, camera, notifications, each asked on first
+  use. Don't make claims about photo access. Check the app code first
+  (the tool pages are base64 inside the app's `src/kit.html`).
+- SendEx: messages fade after 24 hours unless kept; attachments never saved
 If you change `privacy.html`, update the effective date.
 
-## Current status (as of 2026-11-02)
-- Privacy policy reworded 2026-11-02: no photo library permission; photos
-  come through the system picker. Effective date November 2, 2026.
-- Pricing copy stays. The 7-day trial (a free product) and the $4.99 unlock
-  are set up in App Store Connect; the app's purchase code isn't built yet.
+## Current status (as of 2026-11-03)
+- Live (`main`): RevenueCat privacy update, effective November 3, 2026.
+- Branch `ship-pricing-permissions` (local, not pushed): pricing/trial FAQ,
+  photo-access claims removed, Fonts section. See PROGRESS.md.
+- The trial and unlock code is on the app's `iap-trial-unlock` branch (not
+  merged or shipped yet).
 - Purchases are described as "handled by Apple." When the Android app ships,
   that section needs to mention Google Play too.
 
