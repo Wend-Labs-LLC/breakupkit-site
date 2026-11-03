@@ -10,15 +10,14 @@
 
 ## Session 2026-11-03
 ### Done
-- Branch `revenuecat-privacy` (local, not pushed): `privacy.html` now covers
+- `privacy.html` now covers (merged and pushed to main Nov 3, live):
   RevenueCat (anonymous app user ID, App Store purchase records, request
   details; used only to unlock and restore; deletion by email). Wording
   matches Gem State's policy. FAQ: "no servers" became "no servers of its
   own". Effective date November 3, 2026.
 
 ### Decisions
-- Kept it off `main` because the site auto-deploys and the app doesn't use
-  RevenueCat yet. Push it before (or with) the app build that adds purchases.
+- You chose to publish it now, before the app uses RevenueCat.
 
 ### Decisions
 - Kept the pricing copy: the trial and unlock exist in App Store Connect and
