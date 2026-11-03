@@ -30,18 +30,18 @@ This copy makes promises about the app. If the app changes, these pages
 need to change too:
 - Pricing: free tools, 7-day trial, one-time $4.99 unlock, no subscription
 - Data: no accounts, servers, analytics, or ads; everything stays on device
-- Permissions: microphone, camera/photos, notifications
+- Permissions: microphone, camera, notifications. No photo library
+  permission; SendEx attaches photos through the phone's own picker.
 - SendEx: messages fade after 24 hours unless kept
 If you change `privacy.html`, update the effective date.
 
 ## Current status (as of 2026-11-02)
-- One commit: "Break-Up Kit support page and privacy policy." Clean and in
-  sync with origin/main.
-- Open questions:
-  - The site describes a 7-day trial and a $4.99 in-app unlock, but the
-    breakup-kit app has no in-app purchase library yet. Is that still planned?
-  - The privacy policy mentions photos permission. The app's `app.json` only
-    declares microphone and camera.
+- Privacy policy reworded 2026-11-02: no photo library permission; photos
+  come through the system picker. Effective date November 2, 2026.
+- Pricing copy stays. The 7-day trial (a free product) and the $4.99 unlock
+  are set up in App Store Connect; the app's purchase code isn't built yet.
+- Purchases are described as "handled by Apple." When the Android app ships,
+  that section needs to mention Google Play too.
 
 ## Rules
 - Any build uploaded to App Store Connect must be a production build, never
