@@ -8,6 +8,10 @@
   attach buttons use the phone's own picker, which shares only the chosen
   items. Effective date changed to November 2, 2026.
 
+### Decisions
+- Kept the pricing copy: the trial and unlock exist in App Store Connect and
+  the app's purchase code is planned.
+
 ## Session 2026-11-03
 ### Done
 - `privacy.html` now covers (merged and pushed to main Nov 3, live):
@@ -18,10 +22,6 @@
 
 ### Decisions
 - You chose to publish it now, before the app uses RevenueCat.
-
-### Decisions
-- Kept the pricing copy: the trial and unlock exist in App Store Connect and
-  the app's purchase code is planned.
 
 ## What's left (code)
 - [ ] **Medium (when Android ships):** The Purchases section and pricing
