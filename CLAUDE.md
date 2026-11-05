@@ -33,7 +33,8 @@ need to change too:
   App Store product, claimed once, 7 days from the claim date, no
   auto-charge), then the one-time $4.99 Full Unlock. No subscription.
 - Data: no accounts, servers, analytics, or ads; everything stays on device.
-  What leaves the phone: RevenueCat purchase record, Google Fonts requests.
+  What leaves the phone: App Store purchase checks (no third party),
+  Google Fonts requests.
 - Permissions: only microphone, camera, notifications, each asked on first
   use. Don't make claims about photo access. Check the app code first
   (the tool pages are base64 inside the app's `src/kit.html`).
